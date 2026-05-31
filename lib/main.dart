@@ -20,17 +20,17 @@ class FolioApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiRepositoryProvider(
       providers: [
-        RepositoryProvider(create: (context) => DocumentRepository()),
-        RepositoryProvider(create: (context) => ScannerService()),
+        RepositoryProvider<DocumentRepository>(create: (context) => DocumentRepository()),
+        RepositoryProvider<ScannerService>(create: (context) => ScannerService()),
       ],
       child: MultiBlocProvider(
         providers: [
-          BlocProvider(
+          BlocProvider<DashboardBloc>(
             create: (context) => DashboardBloc(
               repository: context.read<DocumentRepository>(),
             )..add(LoadDashboard()),
           ),
-          BlocProvider(
+          BlocProvider<ScannerBloc>(
             create: (context) => ScannerBloc(
               repository: context.read<DocumentRepository>(),
               scannerService: context.read<ScannerService>(),
@@ -59,7 +59,7 @@ class FolioApp extends StatelessWidget {
           darkTheme: ThemeData(
             useMaterial3: true,
             colorScheme: ColorScheme.fromSeed(
-              seedColor: Colors.deepPurple,
+              seedColor: const Color(0xFF673AB7),
               brightness: Brightness.dark,
             ),
             textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
