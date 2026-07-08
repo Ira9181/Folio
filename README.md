@@ -1,33 +1,37 @@
-# Folio – The Offline Document Studio 📄✨
+# 📄 Folio
 
-**Folio** is a powerful, privacy-first offline document scanner and editor built with Flutter. It allows users to scan documents, organize them into folders, apply professional filters, add digital signatures, and export them as high-quality PDFs—all without ever needing an internet connection.
+Folio is an offline document scanner and document management application built with Flutter. It enables users to scan, edit, organize, and export documents as high-quality PDFs while keeping all data securely stored on the device.
 
 ---
 
-## 🚀 Key Features
+## ✨ Features
 
-- **🛡️ 100% Offline & Private:** No cloud uploads. Your documents stay on your device.
-- **🔍 Smart Naming:** Uses **Google ML Kit** to recognize text in your scans and suggest relevant document names (e.g., "Amazon Invoice").
-- **🎨 Folio Studio:**
-  - **Professional Filters:** Magic Color, B&W, and Greyscale matrices.
-  - **Digital Signature:** Hand-draw your signature directly on any page.
-  - **Precise Cropping:** Adjust edges for a perfect scan.
-- **📂 Smart Organization:** Categorize your scans into custom folders.
-- **📑 Document Management:** Easily reorder pages, add more scans to existing documents, or delete unwanted pages.
-- **📄 PDF Export & Share:** Generate high-quality PDFs and share them via your favorite apps.
-- **🌓 Modern UI:** Sleek Material 3 design with support for Light and Dark modes.
+- 📄 Scan documents using the camera
+- ✂️ Crop and edit scanned pages
+- 🎨 Apply filters (Magic Color, Black & White, Greyscale)
+- ✍️ Add digital signatures
+- 📝 Smart document naming using Google ML Kit Text Recognition
+- 📂 Organize documents into folders
+- 🔄 Reorder, add, and delete pages
+- 📑 Generate and share PDF documents
+- 💾 Offline storage using SQLite
+- 🌙 Material 3 UI with Light and Dark mode support
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** [Flutter](https://flutter.dev/)
-- **State Management:** [Flutter BLoC](https://pub.dev/packages/flutter_bloc) (with Equatable)
-- **Database:** [SQFlite](https://pub.dev/packages/sqflite) (Local SQLite storage)
-- **AI/ML:** [Google ML Kit Text Recognition](https://pub.dev/packages/google_mlkit_text_recognition)
-- **Imaging:** [Image Picker](https://pub.dev/packages/image_picker), [Image Cropper](https://pub.dev/packages/image_cropper)
-- **PDF Engine:** [PDF](https://pub.dev/packages/pdf)
-- **UI:** [Google Fonts (Poppins)](https://pub.dev/packages/google_fonts), [Signature](https://pub.dev/packages/signature)
+- Flutter
+- Dart
+- Flutter BLoC
+- Equatable
+- SQLite (sqflite)
+- Google ML Kit Text Recognition
+- Image Picker
+- Image Cropper
+- PDF Package
+- Signature Package
+- Google Fonts
 
 ---
 
@@ -35,56 +39,58 @@
 
 ```text
 lib/
-├── blocs/          # Business logic for Dashboard and Scanner
-├── core/           # Database helpers and constant color filters
-├── models/         # Data models for Folders, Documents, and Pages
-├── repositories/   # Data abstraction layer (Repository Pattern)
-├── services/       # External services (ML Kit, PDF Gen, Image Picking)
+├── blocs/
+├── core/
+├── models/
+├── repositories/
+├── services/
 ├── ui/
-│   ├── screens/    # Full-screen widgets (Dashboard, Studio, Scanner, etc.)
-│   └── widgets/    # Reusable UI components (ListTiles, Grids)
-└── main.dart       # App entry point and dependency injection
+│   ├── screens/
+│   └── widgets/
+└── main.dart
 ```
 
 ---
 
-## ⚙️ Installation & Setup
+## 🚀 Getting Started
 
-1. **Prerequisites:**
-   - Flutter SDK (v3.11.5 or higher recommended)
-   - Android Studio / VS Code
-   - A physical device or emulator
+### Prerequisites
 
-2. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Ira9181/Folio.git
-   cd Folio
-   ```
+- Flutter SDK
+- Android Studio / VS Code
+- Android Emulator or Physical Device
 
-3. **Install dependencies:**
-   ```bash
-   flutter pub get
-   ```
+### Installation
 
-4. **Run the app:**
-   ```bash
-   flutter run
-   ```
+```bash
+git clone https://github.com/Ira9181/Folio.git
+cd Folio
+
+flutter pub get
+
+flutter run
+```
 
 ---
 
 ## 📸 Screenshots
 
-| Dashboard | Scanner | Studio |
-| :---: | :---: | :---: |
-| ![Dashboard Placeholder](https://via.placeholder.com/200x400?text=Dashboard) | ![Scanner Placeholder](https://via.placeholder.com/200x400?text=Scanner) | ![Studio Placeholder](https://via.placeholder.com/200x400?text=Studio) |
+> Add screenshots of the Dashboard, Scanner, Studio, and PDF Preview here.
 
 ---
 
-## 📜 License
+## 🔮 Future Improvements
 
-Distributed under the MIT License. See `LICENSE` for more information.
+- Cloud synchronization
+- OCR-based document search
+- Password-protected PDFs
+- Document sharing via QR
+- Multi-language OCR support
 
 ---
 
-**Developed with ❤️ by [Ira9181](https://github.com/Ira9181)**
+## 👩‍💻 Author
+
+**Ira Ratan Vatsyayan**
+
+GitHub: https://github.com/Ira9181
