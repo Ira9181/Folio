@@ -73,11 +73,7 @@ flutter run
 
 ---
 
-## 📸 Screenshots
 
-> Add screenshots of the Dashboard, Scanner, Studio, and PDF Preview here.
-
----
 
 ## 🔮 Future Improvements
 
